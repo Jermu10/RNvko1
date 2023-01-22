@@ -1,20 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useState } from 'react';
+import { StyleSheet, Text, View, Button, Alert, TextInput, ScrollView} from 'react-native';
+import Tehtava1 from './components/Tehtava1';
+import Tehtava2 from './components/Tehtava2';
+import Tehtava3 from './components/Tehtava3';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+  return (
+    <View>
+      <ScrollView>
+        <Tehtava2 />
+        <Tehtava3 />
+        <Tehtava1 />
+      </ScrollView>
+    </View>
+    )};
